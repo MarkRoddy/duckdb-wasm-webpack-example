@@ -1,0 +1,8 @@
+version: '2'
+services:
+    app:
+      image: nginx
+      volumes:
+        - ./dist/:/usr/share/nginx/html:ro
+      ports:
+        - "5000:80"
